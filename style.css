@@ -1,0 +1,293 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+/* Video de fondo */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    overflow: hidden;
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+/* Encabezado */
+h1 {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    z-index: 1; 
+}
+
+/* Navegación */
+nav ul {
+    background-color: rgb(50, 48, 44);
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    z-index: 1; 
+}
+
+nav li {
+    display: inline-flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px; 
+}
+
+nav li:hover {
+    background-color: rgb(195, 184, 184);
+}
+
+/* Sección de portada */
+.Portada {
+    text-align: center;
+    color: #fff;
+    padding: 50px 20px;
+    position: relative;
+    z-index: 1; 
+}
+
+/* Sección de productos */
+.productos {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    margin-bottom: 50px;
+    z-index: 1;
+    position: relative;
+}
+
+.producto {
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.imagen-producto {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.titulo-foto {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.detalle-link {
+    display: block;
+    margin: 10px 0;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.detalle-link:hover {
+    text-decoration: underline;
+}
+
+.descripcion {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+    position: relative;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Para evitar barra de desplazamiento lateral */
+html, body {
+    overflow-x: hidden; 
+    height: 100%; 
+}
+
+
+/* Oculta el checkbox por defecto */
+.toggle-detalle {
+    display: none;
+}
+
+/* Estilo del botón "Más detalle" */
+.detalle-link {
+    color: #007BFF;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.detalle-link:hover {
+    text-decoration: underline;
+}
+
+/* Oculta el contenido adicional por defecto */
+.contenido-completo {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Cuando el checkbox está marcado, muestra el contenido */
+.toggle-detalle:checked + .detalle-link + .contenido-completo {
+    display: block;
+}
+
+
+
+/* Oculta el checkbox por defecto */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Estilo del botón "Más detalle" */
+.detalle-link {
+    color: #007BFF;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.detalle-link:hover {
+    text-decoration: underline;
+}
+
+/* Oculta el contenido adicional por defecto */
+.contenido-completo-uno,
+.contenido-completo-dos,
+.contenido-completo-tres {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Cuando el checkbox correspondiente está marcado, muestra el contenido */
+#toggle-producto-uno:checked ~ .contenido-completo-uno {
+    display: block;
+}
+
+#toggle-producto-dos:checked ~ .contenido-completo-dos {
+    display: block;
+}
+
+#toggle-producto-tres:checked ~ .contenido-completo-tres {
+    display: block;
+}
+  /*PRODUCTOS*/
+  /* Sección de bebidas */
+.productos {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    margin-bottom: 50px;
+    z-index: 1;
+    position: relative;
+}
+
+.producto {
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.imagen-producto {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+/* Sección de Otros Servicios */
+.otros {
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: left;
+}
+
+.otros h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.otros p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+/* Estilo del carrusel */
+.carrusel {
+    position: relative;
+    width: 60%;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.imagenes {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.imagenes img {
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+
+
+
+.map-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
